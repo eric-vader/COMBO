@@ -17,7 +17,7 @@ def experiment_directory():
 	elif hostname[:3] == 'vpn':
 		return '/Users/changyongoh/Experiments/COMBO'
 	else:
-		raise ValueError('Set proper experiment directory on your machine.')
+	    return './Experiment'
 
 
 def data_directory():
@@ -31,7 +31,7 @@ def data_directory():
 	elif hostname[:4] == 'node':
 		return '/var/scratch/coh/Data'
 	else:
-		raise ValueError('Set proper experiment directory on your machine.')
+	    return './Data'
 
 
 def SMAC_exp_dir():
@@ -45,7 +45,7 @@ def SMAC_exp_dir():
 	elif hostname[:4] == 'node':
 		return '/var/scratch/coh/Experiments/CombinatorialBO_SMAC'
 	else:
-		raise NotImplementedError
+	    return './SMAC'
 
 
 def BOCS_result_dir():
@@ -59,4 +59,4 @@ def BOCS_result_dir():
 	elif hostname[:4] == 'node':
 		return '/var/scratch/coh/Experiments/BOCS'
 	else:
-		raise NotImplementedError
+	    return './BOCS'

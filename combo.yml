@@ -1,0 +1,17 @@
+name: combo
+channels:
+  - conda-forge
+dependencies:
+  - python==3.7.6
+  - pip==20.0.2
+  - psutil
+  - simanneal==0.4.2
+  - toposort
+  - scipy
+  - numpy
+  - pip:
+    - gputil
+    - torch==1.1.0
+    - torchvision==0.2.2
+    - pthflops
+prefix: /home/Eric_Vader/.conda/envs/combo
